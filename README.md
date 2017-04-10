@@ -1,5 +1,5 @@
 # BookStore
-This is an Lab University exercise also working with team.
+This is a Lab University exercise, working with a team.
 
 About the project:
 We are creating an ecommerce online book store and using technologies: Java Spring Boot,Spring Security,
