@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<div xmlns:th="http://www.thymeleaf.org">
+    <h4 th:if="${exception!=null}" class="panel panel-danger" th:text="${exception}"></h4>
+
+    <h1>Delivery Packages: </h1>
+    <table class="table table-hover">
+        <thead>
+            <td>ID</td>
+            <td>Status</td>
+            <td>Update</td>
+        </thead>
+        <tbody>
+        <tr th:each="dp : ${deliveryPackages}">
+            <td th:text="${dp.id}"> </td>
+            <td th:text="${dp.status}"></td>
+            <td><button class="btn btn-default">edit</button></td>
+        </tr>
+        </tbody>
+
+    </table>
+
+    <hr/>
+</div>

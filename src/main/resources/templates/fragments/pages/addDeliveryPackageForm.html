@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<form class="form-inline" th:action="@{/admin/addDeliveryPackage}"
+      enctype="multipart/form-data"
+      method="POST"
+      xmlns:th="http://www.thymeleaf.org">
+    <div class="form-group">
+        <label for="status">Package status:</label>
+        <select th:name="status" id="status" class="form-control">
+            <option th:each="status : ${T(mk.ukim.finki.emt.model.enums.DeliveryStatus).values()}"
+                    th:value="${status}"
+                    th:text="${status}">
+            </option>
+        </select>
+
+        <input type="submit" text="Create" value="Create" class="btn btn-success"/>
+    </div>
+</form>
